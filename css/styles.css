@@ -1,0 +1,213 @@
+body{
+  position: relative;
+  top: 0;
+  left: 0;
+background-color:#FEDB39;
+}
+
+.aung{
+  position: absolute;
+  margin: 20px 0 0 30px;
+  height: 100px;
+  opacity: 0.5;
+}
+.content-container{
+  position: relative;
+  top: 100px;
+}
+.fruit-container {
+  position: relative;
+  left: 130px;
+  top: 200px;
+  z-index: 1;
+}
+.fruit {
+  position: relative;
+
+  height: 50px;
+  visibility: hidden;
+
+}
+.banana, .orange, .grape, .strawberry, .coconut, .apple, .watermelon, .avocado, .pineapple, .guava {
+position: absolute;
+
+}
+.letter-box {
+  position: relative;
+  width: 25%;
+  top: 80px;
+  left: 50%;
+  display: inline-block;
+}
+.box {
+  position: relative;
+  height: 250px;
+}
+.dispenser{
+  position: relative;
+  left: 50px;
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/box.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  cursor:pointer;
+}
+.alphabet {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  background-color:#9A1663;
+  border-radius:10%;
+  color: #fff;
+  cursor: pointer;
+}
+.alphabet:hover{
+
+  opacity: 0.5;
+}
+
+.back,.reset{
+  height: 50px;
+  width: 103px;
+}
+.enter{
+  width: 265px;
+  height: 50px;
+}
+.back, .enter, .reset {
+  box-shadow: 10px 20px 20px 5px #9A1663 inset;
+  color: #fff;
+  cursor: pointer;
+}
+
+.name-tag{
+  position: absolute;
+  margin-top: 20px;
+  width: 500px;
+  right: 500px
+
+}
+span{
+  color: blue;
+
+}
+h1{
+  position: absolute;
+  right: 500px;
+  font-family: 'Alex Brush', cursive;
+  color: #6C4AB6;
+  animation: fullSize 3s linear;
+}
+
+h2{
+  font-size: 30px;
+  color: #9A1663;
+}
+
+.tickR, .tickW {
+  position: absolute;
+  top: 280px;
+  left: 750px;
+  height: 70px;
+  width: 70px;
+  font-size: 70px;
+  color:  #9A1663;
+
+  display: none;
+}
+@keyframes fullSize{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(2);
+  }
+}
+
+@media (max-width: 500px){
+
+  .aung{
+
+    height: 60px;
+  }
+  .alphabet {
+    height: 30px;
+    width: 25px;
+    margin-bottom: 10px;
+
+  }
+
+  .dispenser{
+
+    left: 25px;
+    height: 100px;
+    width: 100px;
+
+  }
+
+  .back,.reset{
+    height: 40px;
+    width: 50px;
+  }
+  .back {
+    margin-left: 5px;
+  }
+  .enter{
+    width: 60px;
+    height: 40px;
+  }
+
+  .letter-box{
+    top: 60px;
+    width: 25%;
+    left: 55%;
+  }
+
+  .fruit-container {
+    position: relative;
+    left: 60px;
+    top: 250px;
+    z-index: 1;
+  }
+
+  .fruit {
+    height: 25px;
+
+  }
+
+  h1{
+    position: absolute;
+    right: 150px;
+    font-family: 'Alex Brush', cursive;
+    color: #6C4AB6;
+    animation: fullSize 3s linear;
+  }
+
+  h2{
+    font-size: 15px;
+
+  }
+
+  .name-tag{
+    position: relative;
+    margin-top: 50px;
+    width: 200px;
+    left: 200px
+  }
+
+  span{
+    font-size: 20px;
+  }
+
+  .tickR, .tickW {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+
+  }
+}
